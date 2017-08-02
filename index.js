@@ -12,7 +12,7 @@ module.exports = {
         scriptUrl = scriptUrl + `&key=${config[this.name].apiKey}`;
       }
     }
-    return scriptUrl !== '' ? `<script src="${scriptUrl}"></script>` : '';
+    return scriptUrl !== '' ? `<script src="${scriptUrl}&libraries=places"></script>` : '';
   }
 
 };
